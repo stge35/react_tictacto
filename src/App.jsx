@@ -1,10 +1,17 @@
+import Player from "./component/Player.jsx";
 
 function App() {
-  
+  return <main>
+      <div id="game-container">
+          <ol id="players">
+              <Player initialName="Player1" symbol="X" />
+              <Player initialName="Player2" symbol="O" />
+          </ol>
 
-  return (
-    <h1>React Tic-Tac-Toe</h1>
-  )
+          GAME BOARD
+      </div>
+      LOG
+  </main>
 }
 
 export default App
